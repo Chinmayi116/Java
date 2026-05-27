@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorting Numbers</title>
+</head>
+<body>
+
+<script>
+
+let numbers = [45, 12, 89, 5, 67];
+
+document.write("Original Array: " + numbers + "<br>");
+
+numbers.sort(function(a, b) {
+    return a - b;
+});
+
+document.write("Ascending Order: " + numbers + "<br>");
+
+numbers.sort(function(a, b) {
+    return b - a;
+});
+
+document.write("Descending Order: " + numbers);
+
+</script>
+
+</body>
+</html>
